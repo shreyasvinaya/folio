@@ -8,5 +8,3 @@ category: work
 ---
 
 Building an emotionally responsive Humanoid bot with knowledge capture , speech text generation using Generative Large Language Models
-
-

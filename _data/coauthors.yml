@@ -1,7 +1,7 @@
 "Basa Pati":
   - firstname: ["Peeta", "P."]
     url: https://www.amrita.edu/faculty/peeta-pati/
-  
+
 "Agarwal":
   - firstname: ["Swati"]
     url: https://scholar.google.co.in/citations?hl=en&user=-zk-xD0AAAAJ
@@ -13,9 +13,6 @@
 "Ramsundar":
   - firstname: ["Bharath"]
     url: https://rbharath.github.io/about/
-
-
-
 # "Podolsky":
 #   - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
 #     url: https://en.wikipedia.org/wiki/Boris_Podolsky
@@ -24,7 +21,7 @@
 #   - firstname: ["Nathan", "N."]
 #     url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-# "Bach": 
+# "Bach":
 #   - firstname: ["Johann Sebastian", "J. S."]
 #     url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
