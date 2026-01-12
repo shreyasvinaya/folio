@@ -6,6 +6,7 @@ description: My publications organized by type
 nav: true
 nav_order: 2
 ---
+
 <!-- _pages/publications.md -->
 
 ## Journal Publications

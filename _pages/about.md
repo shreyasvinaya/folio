@@ -13,11 +13,12 @@ profile:
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: true # includes a list of news items
+latest_posts: true # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
+
 I'm an AI Research Scientist at <a href="https://mstack.ai">MStack AI</a>, where I design Chemistry-first AI models for molecule synthesis and chemical supply chains. I completed my Bachelor of Engineering in Computer Science and Masters of Science in Chemistry from <a href="https://www.bits-pilani.ac.in/goa/" target="_blank">BITS Pilani, Goa Campus</a>.
 
 Previously, I was a Research Fellow at <a href="https://www.deepforestsci.com/" target="_blank">Deep Forest Sciences</a>, where I led the development of <b>DeepRetro</b> — a novel AI framework for retrosynthesis that achieved state-of-the-art results on multi-step synthesis benchmarks. This work was awarded the <b>$100,000 Standard Industries Chemical Innovation Challenge</b>. I completed my master's thesis at <a href="https://yale.edu" target="_blank">Yale University</a> with Prof. <a href="https://krishnaswamylab.org/" target="_blank">Smita Krishnaswamy</a>, working on geometric deep learning for molecule generation.

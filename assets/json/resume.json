@@ -31,10 +31,7 @@
       "url": "https://mstack.ai",
       "startDate": "2025-08-01",
       "summary": "Designing novel Chemistry-first AI models to tackle Molecule Synthesis and Chemical supply chains. Led the design and development of chemical foundational models for chemical reaction understanding.",
-      "highlights": [
-        "Chemical Foundation Models",
-        "Molecule Synthesis"
-      ]
+      "highlights": ["Chemical Foundation Models", "Molecule Synthesis"]
     },
     {
       "name": "Deep Forest Sciences",
@@ -55,10 +52,7 @@
       "url": "https://yale.edu",
       "startDate": "2024-06-01",
       "summary": "Conducting research on molecule generation models using geometric deep learning with Prof. Smita Krishnaswamy.",
-      "highlights": [
-        "Geometric Deep Learning",
-        "Molecular Design"
-      ]
+      "highlights": ["Geometric Deep Learning", "Molecular Design"]
     },
     {
       "name": "Harvard Medical School",
@@ -66,10 +60,7 @@
       "startDate": "2023-12-01",
       "endDate": "2025-03-01",
       "summary": "Investigating the neural mechanisms of language processing using AI models under Prof Gabriel Kreiman.",
-      "highlights": [
-        "Neural Language Processing",
-        "Machine Learning for Neuroscience"
-      ]
+      "highlights": ["Neural Language Processing", "Machine Learning for Neuroscience"]
     }
   ],
   "volunteer": [
@@ -79,10 +70,7 @@
       "url": "https://github.com/deepchem/deepchem",
       "startDate": "2024-05-01",
       "summary": "Mentored contributors on polymer generative pipelines and model migration from TensorFlow to PyTorch.",
-      "highlights": [
-        "Mentored Debasish Mohanty on polymer generative pipelines",
-        "Mentored Bibhusundar Mohapatra on Chemception model migration"
-      ]
+      "highlights": ["Mentored Debasish Mohanty on polymer generative pipelines", "Mentored Bibhusundar Mohapatra on Chemception model migration"]
     },
     {
       "organization": "Google Developer Student Clubs, BITS Goa",
@@ -90,10 +78,7 @@
       "startDate": "2022-08-01",
       "endDate": "2023-05-01",
       "summary": "Guided 25+ ML enthusiasts, conducted weekly training sessions, organized hackathons.",
-      "highlights": [
-        "Led weekly ML training sessions",
-        "Organized hackathons and mentored in ML model building"
-      ]
+      "highlights": ["Led weekly ML training sessions", "Organized hackathons and mentored in ML model building"]
     }
   ],
   "education": [
@@ -156,36 +141,19 @@
       "name": "Machine Learning",
       "level": "Expert",
       "icon": "fa-solid fa-brain",
-      "keywords": [
-        "Deep Learning",
-        "Graph Neural Networks",
-        "Large Language Models",
-        "Generative AI"
-      ]
+      "keywords": ["Deep Learning", "Graph Neural Networks", "Large Language Models", "Generative AI"]
     },
     {
       "name": "Drug Discovery",
       "level": "Expert",
       "icon": "fa-solid fa-flask",
-      "keywords": [
-        "Retrosynthesis",
-        "Molecular Generation",
-        "Property Prediction",
-        "Computational Chemistry"
-      ]
+      "keywords": ["Retrosynthesis", "Molecular Generation", "Property Prediction", "Computational Chemistry"]
     },
     {
       "name": "Tools & Languages",
       "level": "Expert",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "PyTorch",
-        "TensorFlow",
-        "Git",
-        "AWS",
-        "Azure"
-      ]
+      "keywords": ["Python", "PyTorch", "TensorFlow", "Git", "AWS", "Azure"]
     }
   ],
   "languages": [
@@ -199,39 +167,26 @@
     {
       "name": "AI for Science",
       "icon": "fa-solid fa-atom",
-      "keywords": [
-        "Drug Discovery",
-        "Materials Science",
-        "Computational Biology"
-      ]
+      "keywords": ["Drug Discovery", "Materials Science", "Computational Biology"]
     },
     {
       "name": "Open Source",
       "icon": "fa-brands fa-github",
-      "keywords": [
-        "DeepChem",
-        "Scientific Computing"
-      ]
+      "keywords": ["DeepChem", "Scientific Computing"]
     }
   ],
   "projects": [
     {
       "name": "DeepRetro",
       "summary": "AI Co-Pilot for Collaborative Retrosynthesis using iterative LLM reasoning. Achieved state-of-the-art 96.3% success rate.",
-      "highlights": [
-        "Nature Scientific Reports Publication",
-        "$100,000 Challenge Winner"
-      ],
+      "highlights": ["Nature Scientific Reports Publication", "$100,000 Challenge Winner"],
       "startDate": "2023-06-01",
       "endDate": "2025-08-01"
     },
     {
       "name": "DeepChem",
       "summary": "Core contributor to the open-source drug discovery toolkit. Migrated models from TensorFlow to PyTorch.",
-      "highlights": [
-        "92% increase in user base",
-        "GSoC Mentor 2024-2025"
-      ],
+      "highlights": ["92% increase in user base", "GSoC Mentor 2024-2025"],
       "startDate": "2023-01-01",
       "url": "https://github.com/deepchem/deepchem"
     }

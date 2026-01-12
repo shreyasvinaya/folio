@@ -2,14 +2,13 @@
   type: map
   contents:
     - name: Full Name
-      value: Shreyas V
+      value: Shreyas Vinaya Sathyanarayana
     - name: Languages
       value: English
 
 - title: Education
   type: time_table
   contents:
-    
     - title: MSc Chemistry
       institution: Birla Institute of Technology And Science, Pilani (BITS Pilani)
       year: 2025
@@ -45,7 +44,7 @@
         - Achieved state-of-the-art 96.3% success rate on the challenging USPTO-190 multi-step benchmark
         - Generated viable, previously unreported synthetic pathways for complex natural products like Ohuamine C
         - Migrated models in the open-source drug discovery toolkit DeepChem from TensorFlow to PyTorch, increasing user base by 92%
-    - title: Research Intern 
+    - title: Research Intern
       institution: Harvard Medical School
       year: 2024-2025
       description:
@@ -65,7 +64,7 @@
         - title: Drug Discovery
           contents:
             - Examining the usage of Large Language Models to generate and synthesize novel molecules for drug discovery
-        
+
         - title: Natural Language Processing
           contents:
             - Surveyed the usage of Large Language Models to generate questions and answers
@@ -74,7 +73,7 @@
           contents:
             - Surveyed the usage of BERT and Transformer based architectures to predict Protein Residue binding locations
             - Devised deep learning methods to Predict Protein Residue binding
-        
+
         # - title: Molecular Machine Learning
         #   contents:
         #     - Surveyed the usage of Graph Neural Networks to predict Molecular Properties
@@ -112,7 +111,6 @@
     #   description:
     #     - Worked with Cisco and a group of 5 people to build <a href="https://solan.pythonanywhere.com/index.html">Solan</a>
     #     - A web application that aims to promote learning by crowdsourcing the process of making question banks.
-
 
 - title: Open Source Projects
   type: time_table
@@ -152,12 +150,11 @@
       year: 2022
       description: IEEE 7th International conference for Convergence in Technology (I2CT)
 
-
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2024
-      items: 
+      items:
         - Winner ($100,000) - Standard Industries Chemical Innovation Challenge
         - 2nd Runner up - ACM Goa Chapter's event PitchIt!
 
@@ -165,7 +162,7 @@
   type: nested_list
   contents:
     - title: Natural Language Processing
-      items: 
+      items:
         - Large Language Models
         - Text Generation
         - Applications of NLP in Science
