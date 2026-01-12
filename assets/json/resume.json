@@ -134,13 +134,13 @@
     {
       "name": "DeepRetro: Retrosynthetic Pathway Discovery using Iterative LLM Reasoning",
       "publisher": "Nature Scientific Reports",
-      "releaseDate": "2025",
+      "releaseDate": "2026",
       "summary": "Novel hybrid AI framework for retrosynthesis achieving 96.3% success rate on USPTO-190 benchmark."
     },
     {
       "name": "ChemBERTa-3: An Open Source Training Framework for Chemical Foundation Models",
       "publisher": "Royal Society of Chemistry's Digital Discovery",
-      "releaseDate": "2025",
+      "releaseDate": "2026",
       "summary": "Open source framework for training chemical foundation models."
     },
     {

@@ -125,10 +125,10 @@
   type: time_table
   contents:
     - title: "DeepRetro: Retrosynthetic Pathway Discovery using Iterative LLM Reasoning"
-      year: 2025
+      year: 2026
       description: Accepted at Nature Scientific Reports
     - title: "ChemBERTa-3: An Open Source Training Framework for Chemical Foundation Models"
-      year: 2025
+      year: 2026
       description: Accepted at Royal Society of Chemistry's Digital Discovery
     - title: "DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling"
       year: 2025
