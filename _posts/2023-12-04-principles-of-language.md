@@ -6,7 +6,7 @@ tags: notes
 date: 2023-12-04 
 
 authors:
-    - name: Shreyas V
+    - name: Shreyas Vinaya Sathyanarayana
       url: "https://shreyasvinaya.github.io/folio/"
       affiliations:
         name: BITS Pilani, Goa Campus
