@@ -30,26 +30,27 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Visiting Researcher Intern 
-      institution: Yale University
-      year: 2024-now
+    - title: AI Research Scientist
+      institution: MStack AI
+      year: 2025-now
       description:
-        - Conducting research on molecule generation models using geometric deep learning with Prof. Smita Krishnaswamy
-        - Developing novel algorithms to enhance molecular design efficiency
+        - Designing novel Chemistry-first AI models to tackle Molecule Synthesis and Chemical supply chains
+        - Led the design and development of chemical foundational models for chemical reaction understanding
+    - title: Research Fellow (DeepRetro Lead)
+      institution: Deep Forest Sciences
+      year: 2023-2025
+      description:
+        - Led the design and development of DeepRetro, a Chemist's AI Co-Pilot for Collaborative Retrosynthesis
+        - Architected a core "iterative LLM reasoning" loop integrating generative LLMs with traditional template-based engines
+        - Achieved state-of-the-art 96.3% success rate on the challenging USPTO-190 multi-step benchmark
+        - Generated viable, previously unreported synthetic pathways for complex natural products like Ohuamine C
+        - Migrated models in the open-source drug discovery toolkit DeepChem from TensorFlow to PyTorch, increasing user base by 92%
     - title: Research Intern 
       institution: Harvard Medical School
-      year: 2024-now
+      year: 2024-2025
       description:
         - Investigating the neural mechanisms of language processing using AI models under Prof Gabriel Kreiman
         - Applying advanced machine learning techniques to analyze neural data, contributing to a deeper understanding of language cognition
-    - title: Research Fellow
-      institution: Deep Forest Sciences
-      year: 2023-now
-      description:
-        - Developed tools for AI-aided retrosynthesis, molecule & materials discovery
-        - Built infrastructure to train Molecular LLMs
-        - Semifinalist at the Standard Industries Chemical Innovation Challenge, awarded prize money of $10,000
-        - Migrated models in the open-source drug discovery toolkit DeepChem from TensorFlow to PyTorch, increasing user base by 92%
     - title: Product Engineering Intern
       institution: Sprinklr
       year: Summer 2024
@@ -59,7 +60,7 @@
         - Improved productivity of product managers by 2x through streamlined evaluation processes
     - title: Student Researcher
       institution: APPCAIR, Birla Institute of Technology & Science, Pilani
-      year: 2022-now
+      year: 2022-2025
       description:
         - title: Drug Discovery
           contents:
@@ -123,12 +124,33 @@
 - title: Publications
   type: time_table
   contents:
+    - title: "DeepRetro: Retrosynthetic Pathway Discovery using Iterative LLM Reasoning"
+      year: 2025
+      description: Accepted at Nature Scientific Reports
+    - title: "ChemBERTa-3: An Open Source Training Framework for Chemical Foundation Models"
+      year: 2025
+      description: Accepted at Royal Society of Chemistry's Digital Discovery
+    - title: "DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling"
+      year: 2025
+      description: Championing Open-source DEvelopment in ML Workshop @ ICML25
+    - title: Open-source Polymer Generative Pipeline
+      year: 2025
+      description: 4th Annual AAAI Workshop on AI to Accelerate Science and Engineering (AI2ASE)
+    - title: Multi-Turn Human-LLM Interaction Through the Lens of a Two-Way Intelligibility Protocol
+      year: 2025
+      description: MTI-LLM Workshop at NeurIPS 2025
+    - title: Open Source Molecular Processing Pipeline for Generating Molecules
+      year: 2024
+      description: MoML 2024, Baylearn 2024, ML4PS Workshop at NeurIPS 2024
     - title: Predicting ATP binding sites in protein sequences using Deep Learning and Natural Language Processing
       year: 2024
-      description: Published in 3rd Annual AAAI Workshop on AI to Accelerate Science and Engineering (AI2ASE)
+      description: 3rd Annual AAAI Workshop on AI to Accelerate Science and Engineering (AI2ASE)
+    - title: "CountCLIP - [Re] Teaching CLIP to Count to Ten"
+      year: 2024
+      description: arXiv preprint
     - title: Speech to Equation Conversion using a PoE Tagger
       year: 2022
-      description: Published in IEEE 7th International conference for Convergence in Technology (I2CT), 2022
+      description: IEEE 7th International conference for Convergence in Technology (I2CT)
 
 
 - title: Honors and Awards
@@ -136,7 +158,8 @@
   contents:
     - year: 2024
       items: 
-        - 3rd prize in ACM Goa Chapter's event PitchIt!
+        - Winner ($100,000) - Standard Industries Chemical Innovation Challenge
+        - 2nd Runner up - ACM Goa Chapter's event PitchIt!
 
 - title: Academic Interests
   type: nested_list

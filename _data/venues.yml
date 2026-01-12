@@ -14,4 +14,10 @@
   url: https://neurips.cc
   color: "#3e8e9e"
 
+"AAAI-2025":
+  url: https://ai-2-ase.github.io
+  color: "#0056b3"
 
+"ICLR-2025":
+  url: https://iclr.cc
+  color: "#3e8e9e"

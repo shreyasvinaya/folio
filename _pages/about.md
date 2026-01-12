@@ -18,14 +18,10 @@ latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+I'm an AI Research Scientist at <a href="https://mstack.ai">MStack AI</a>, where I design Chemistry-first AI models for molecule synthesis and chemical supply chains. I completed my Bachelor of Engineering in Computer Science and Masters of Science in Chemistry from <a href="https://www.bits-pilani.ac.in/goa/" target="_blank">BITS Pilani, Goa Campus</a>.
 
-I am an undergraduate student at 
-<a href="https://www.bits-pilani.ac.in/goa/" target="_blank">BITS Pilani, Goa Campus
-</a> where I'm pursuing Bachelor of Engineering in Computer Science and Masters of Science in Chemistry. I am currently working with Prof. <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile" target="_blank">Ashwin Srinivasan</a>
-  , Prof. <a href="https://www.bits-pilani.ac.in/goa/raviprasad-aduri" target="_blank">Raviprasad Aduri</a> and Prof. <a href="https://www.bits-pilani.ac.in/goa/tanmay-tulsidas-verlekar/">Tanmay Verlekar</a> at 
-  <a href="https://www.bits-pilani.ac.in/appcair/" target="_blank">APPCAIR</a> on Generation and Synthesizability of Novel Molecules.
+Previously, I was a Research Fellow at <a href="https://www.deepforestsci.com/" target="_blank">Deep Forest Sciences</a>, where I led the development of <b>DeepRetro</b> — a novel AI framework for retrosynthesis that achieved state-of-the-art results on multi-step synthesis benchmarks. This work was awarded the <b>$100,000 Standard Industries Chemical Innovation Challenge</b>. I completed my master's thesis at <a href="https://yale.edu" target="_blank">Yale University</a> with Prof. <a href="https://krishnaswamylab.org/" target="_blank">Smita Krishnaswamy</a>, working on geometric deep learning for molecule generation.
 
-I am also a member of <a href="https://www.saidl.in/home" target="_blank">SAiDL, Society for Artificial Intelligence and Deep Learning</a> at BITS Goa; we try to inculcate a spirit of AI and DL in the university through open source projects and personalised courses. 
-My research interests revolve around <b>Graph Neural Networks, Natural Language Processing, Drug Discovery, Computational Bio-Chemistry </b> and <b> Large Language Models </b>
+I'm an active contributor to <a href="https://github.com/deepchem/deepchem" target="_blank">DeepChem</a>, the open-source drug discovery toolkit, and serve as a Google Summer of Code mentor. At BITS Pilani, I worked with Prof. <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile" target="_blank">Ashwin Srinivasan</a> at <a href="https://www.bits-pilani.ac.in/appcair/" target="_blank">APPCAIR</a> on AI for drug discovery.
 
-<!-- Shreyas V, A BITS Pilani student, merges Chemistry and Computer Science to advance Natural Language Processing and AI-aided Drug Discovery. His impactful work with the Deepchem toolkit and unique research on interpreting spoken mathematical equations underscore his innovative spirit. Currently, Shreyas is working on Computational Bio-Chemistry and Large Language Models -->
+My research interests span <b>AI for Chemistry, Drug Discovery, Graph Neural Networks, Large Language Models</b>, and <b>Computational Biology</b>.

@@ -1,60 +1,128 @@
 ---
 ---
 
-@misc{openMolGen,
+% =============================================================================
+% MAJOR PUBLICATIONS (Journal Acceptances & Full Conference Papers)
+% =============================================================================
+
+@article{deepretro2025,
   bibtex_show={true},
-  abbr={arXiv},
-  title={Open-Source Molecular Processing Pipeline for Generating Molecules}, 
-  author={Shreyas, V and Siguenza,Jose and Bania,Karan and Ramsundar, Bharath},
+  abbr={Nat Sci Rep},
+  title={DeepRetro: Retrosynthetic Pathway Discovery using Iterative LLM Reasoning},
+  author={Sathyanarayana, S. V. and Hiremath, S. D. and Shah, R. and Panda, R. and Jana, R. and Singh, R. and Ramsundar, B.},
+  journal={Nature Scientific Reports},
+  year={2025},
+  selected={true},
+  category={journal},
+  abstract={DeepRetro is a novel, open-source hybrid AI framework that solves complex retrosynthesis problems by integrating the generative power of LLMs with the precision of traditional template-based engines. Achieved state-of-the-art performance with 96.3% success rate on the USPTO-190 multi-step benchmark.},
+}
+
+@article{chemberta3_2025,
+  bibtex_show={true},
+  abbr={RSC DD},
+  title={ChemBERTa-3: An Open Source Training Framework for Chemical Foundation Models},
+  author={Singh, R. and Barsainyan, A. A. and Irfan, R. and Amorin, C. J. and He, S. and Davis, T. and Thiagarajan, A. and Sankaran, S. and Chithrananda, S. and Ahmad, W. and Jones, D. and McLoughlin, K. and Kim, H. and Bhutani, A. and Sathyanarayana, S. V. and Viswanathan, V. and Allen, J. E. and Ramsundar, B.},
+  journal={Royal Society of Chemistry's Digital Discovery},
+  year={2025},
+  selected={true},
+  category={journal},
+}
+
+@INPROCEEDINGS{PoETagger,
+  bibtex_show={true},
+  abbr={IEEE I2CT},
+  author={Basa Pati, Peeta and Shreyas, V},
+  booktitle={2022 IEEE 7th International conference for Convergence in Technology (I2CT)}, 
+  title={Speech to Equation Conversion using a PoE Tagger}, 
+  year={2022},
+  pages={1-4},
+  doi={10.1109/I2CT54291.2022.9824252},
+  selected={true},
+  category={conference},
+  url={https://ieeexplore.ieee.org/document/9824252},
+}
+
+% =============================================================================
+% WORKSHOP PAPERS
+% =============================================================================
+
+@inproceedings{openMolGen2024,
+  bibtex_show={true},
+  abbr={NeurIPS WS},
+  title={Open Source Molecular Processing Pipeline for Generating Molecules}, 
+  author={Shreyas, V and Siguenza, Jose and Bania, Karan and Ramsundar, Bharath},
+  booktitle={Machine Learning and the Physical Sciences Workshop at NeurIPS 2024},
   year={2024},
   eprint={2408.06261},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
   doi={10.48550/arXiv.2408.06261},
   selected={true},
-  url={https://arxiv.org/abs/2408.06261}, 
+  category={workshop},
+  url={https://arxiv.org/abs/2408.06261},
+  note={Also presented at MoML 2024 and Baylearn 2024},
 }
 
-@misc{ATP-binding,
+@inproceedings{deepchem_variant2025,
   bibtex_show={true},
-  abbr={AAAI-2024},
+  abbr={ICML WS},
+  title={DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling},
+  author={Bisoi, A. V. and Shreyas, V and Siguenza, J. and Ramsundar, B.},
+  booktitle={Championing Open-source DEvelopment in ML Workshop at ICML 2025},
+  year={2025},
+  category={workshop},
+}
+
+@inproceedings{polymer_pipeline2025,
+  bibtex_show={true},
+  abbr={AAAI WS},
+  title={Open-source Polymer Generative Pipeline},
+  author={Mohanty, D. and Shreyas, V and Palai, A. and Ramsundar, B.},
+  booktitle={4th Annual AAAI Workshop on AI to Accelerate Science and Engineering (AI2ASE)},
+  year={2025},
+  category={workshop},
+}
+
+@inproceedings{mti_llm2025,
+  bibtex_show={true},
+  abbr={NeurIPS WS},
+  title={Multi-Turn Human-LLM Interaction Through the Lens of a Two-Way Intelligibility Protocol},
+  author={Mestha, H. and Bania, K. and Shreyas, V and Liu, S. and Srinivasan, A.},
+  booktitle={MTI-LLM Workshop at NeurIPS 2025},
+  year={2025},
+  category={workshop},
+}
+
+@inproceedings{ATP-binding2024,
+  bibtex_show={true},
+  abbr={AAAI WS},
   title={Predicting ATP binding sites in protein sequences using Deep Learning and Natural Language Processing}, 
   author={Shreyas, V and Agarwal, Swati},
+  booktitle={3rd Annual AAAI Workshop on AI to Accelerate Science and Engineering (AI2ASE)},
   year={2024},
   eprint={2402.01829},
   archivePrefix={arXiv},
   primaryClass={q-bio.BM},
   doi={10.48550/arXiv.2402.01829},
   selected={true},
+  category={workshop},
   url={https://arxiv.org/abs/2402.01829}, 
 }
 
-@INPROCEEDINGS{PoETagger,
-  bibtex_show={true},
-  abbr={I2CT},
-  author={Basa Pati, Peeta and Shreyas, V},
-  booktitle={2022 IEEE 7th International conference for Convergence in Technology (I2CT)}, 
-  title={Speech to Equation Conversion using a PoE Tagger}, 
-  year={2022},
-  volume={},
-  number={},
-  pages={1-4},
-  doi={10.1109/I2CT54291.2022.9824252},
-  selected={true},
-  url={https://ieeexplore.ieee.org/document/9824252},
-}
+% =============================================================================
+% PREPRINTS
+% =============================================================================
 
-@misc{CountCLIP,
+@misc{CountCLIP2024,
   bibtex_show={true},
   abbr={arXiv},
   title={CountCLIP -- [Re] Teaching CLIP to Count to Ten}, 
-  author={Harshvardhan Mestha and Tejas Agrawal and Karan Bania and V Shreyas and Yash Bhisikar},
+  author={Mestha, Harshvardhan and Agrawal, Tejas and Bania, Karan and Shreyas, V and Bhisikar, Yash},
   year={2024},
   eprint={2406.03586},
   archivePrefix={arXiv},
   primaryClass={cs.CV},
   doi={10.48550/arXiv.2406.03586},
-  selected={true},
+  category={preprint},
   url={https://arxiv.org/abs/2406.03586}, 
 }
-
