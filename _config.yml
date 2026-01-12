@@ -299,9 +299,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-
   last_name: [V, Vinaya, Shreyas, Sathyanarayana, V. Sathyanarayana]
-  first_name: [Shreyas, V, Vinaya, S. V., S. ]
+  first_name: [Shreyas, V, Vinaya, S. V., S.]
 
   style: apa
   locale: en
