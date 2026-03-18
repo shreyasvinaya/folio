@@ -1,0 +1,123 @@
+/******************************************************************************
+ * Site polish
+ ******************************************************************************/
+
+.post {
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .post-title {
+    line-height: 1.05;
+  }
+
+  .post-description,
+  .desc {
+    color: var(--global-text-color-light);
+    font-size: 1.05rem;
+    max-width: 42rem;
+  }
+
+  h2 {
+    margin-top: 2.75rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--global-divider-color);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+}
+
+.profile {
+  img {
+    border-radius: 1.2rem;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  }
+}
+
+.home-intro {
+  margin-bottom: 1.75rem;
+}
+
+.home-intro-lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.home-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.9rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.home-highlight-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-height: 150px;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 1rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 247, 251, 0.92));
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+
+  strong {
+    font-size: 1.02rem;
+    line-height: 1.35;
+  }
+
+  span:last-child {
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+.home-highlight-label {
+  display: inline-block;
+  color: var(--global-theme-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-intro {
+  max-width: 46rem;
+  margin-bottom: 1.6rem;
+  color: var(--global-text-color-light);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.publications .bibliography {
+  margin-top: 0.5rem;
+}
+
+html[data-theme="dark"] {
+  .home-highlight-card {
+    border-color: rgba(148, 163, 184, 0.18);
+    background:
+      linear-gradient(180deg, rgba(17, 24, 39, 0.88), rgba(15, 23, 42, 0.82));
+    box-shadow: none;
+  }
+
+  .profile img {
+    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.45);
+  }
+}
+
+@media (max-width: 576px) {
+  .post .post-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .home-intro-lead {
+    font-size: 1.03rem;
+  }
+
+  .home-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+}

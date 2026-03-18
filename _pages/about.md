@@ -2,26 +2,54 @@
 layout: about
 title: about
 permalink: /
-# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: AI for chemistry, retrosynthesis, and scientific machine learning
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
-  # more_info: >
-  #   <p>555 your office number</p>
-  #   <p>123 your address street</p>
-  #   <p>Your City, State 12345</p>
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>AI Research Scientist at MStack AI</p>
+    <p>Deep learning for molecule synthesis and chemical discovery</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 6 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
-I'm an AI Research Scientist at <a href="https://mstack.ai">MStack AI</a>, where I design Chemistry-first AI models for molecule synthesis and chemical supply chains. I completed my Bachelor of Engineering in Computer Science and Masters of Science in Chemistry from <a href="https://www.bits-pilani.ac.in/goa/" target="_blank">BITS Pilani, Goa Campus</a>.
+<div class="home-intro">
+  <p class="home-intro-lead">I am an AI Research Scientist at <a href="https://mstack.ai" target="_blank" rel="noopener noreferrer">MStack AI</a>, where I design chemistry-first AI models for molecule synthesis and chemical supply chains. I completed a Bachelor of Engineering in Computer Science and a Master of Science in Chemistry at <a href="https://www.bits-pilani.ac.in/goa/" target="_blank" rel="noopener noreferrer">BITS Pilani, Goa Campus</a>.</p>
 
-Previously, I was a Research Fellow at <a href="https://www.deepforestsci.com/" target="_blank">Deep Forest Sciences</a>, where I led the development of <b>DeepRetro</b> — a novel AI framework for retrosynthesis that achieved state-of-the-art results on multi-step synthesis benchmarks. This work was awarded the <b>$100,000 Standard Industries Chemical Innovation Challenge</b>. I completed my master's thesis at <a href="https://yale.edu" target="_blank">Yale University</a> with Prof. <a href="https://krishnaswamylab.org/" target="_blank">Smita Krishnaswamy</a>, working on geometric deep learning for molecule generation.
+  <p>I previously led <strong>DeepRetro</strong> at <a href="https://www.deepforestsci.com/" target="_blank" rel="noopener noreferrer">Deep Forest Sciences</a>, building a retrosynthesis framework that achieved state-of-the-art results on multi-step synthesis benchmarks and won the <strong>$100,000 Standard Industries Chemical Innovation Challenge</strong>. My research spans AI for chemistry, drug discovery, graph neural networks, large language models, and open-source scientific software, with prior work at <a href="https://yale.edu" target="_blank" rel="noopener noreferrer">Yale University</a>, <a href="https://github.com/deepchem/deepchem" target="_blank" rel="noopener noreferrer">DeepChem</a>, and <a href="https://www.bits-pilani.ac.in/appcair/" target="_blank" rel="noopener noreferrer">APPCAIR</a>.</p>
+</div>
 
-I'm an active contributor to <a href="https://github.com/deepchem/deepchem" target="_blank">DeepChem</a>, the open-source drug discovery toolkit, and serve as a Google Summer of Code mentor. At BITS Pilani, I worked with Prof. <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile" target="_blank">Ashwin Srinivasan</a> at <a href="https://www.bits-pilani.ac.in/appcair/" target="_blank">APPCAIR</a> on AI for drug discovery.
-
-My research interests span <b>AI for Chemistry, Drug Discovery, Graph Neural Networks, Large Language Models</b>, and <b>Computational Biology</b>.
+<div class="home-highlight-grid">
+  <div class="home-highlight-card">
+    <span class="home-highlight-label">Current</span>
+    <strong>AI Research Scientist</strong>
+    <span>MStack AI</span>
+  </div>
+  <div class="home-highlight-card">
+    <span class="home-highlight-label">Flagship Work</span>
+    <strong>DeepRetro</strong>
+    <span>Iterative LLM reasoning for retrosynthesis</span>
+  </div>
+  <div class="home-highlight-card">
+    <span class="home-highlight-label">Latest Acceptance</span>
+    <strong>Nature Scientific Reports</strong>
+    <span>DeepRetro accepted in 2026</span>
+  </div>
+  <div class="home-highlight-card">
+    <span class="home-highlight-label">Open Source</span>
+    <strong>DeepChem Mentor</strong>
+    <span>Google Summer of Code mentor</span>
+  </div>
+</div>
