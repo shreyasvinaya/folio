@@ -1,0 +1,10 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+cv_pdf: /assets/pdf/shreyas_v_resume.pdf # path to your CV PDF file
+email: shreyas.college@gmail.com # your email address
+github_username: shreyasvinaya
+linkedin_username: shreyas-v1
+rss_icon: true # comment this line to hide the RSS icon
+scholar_userid: cUJ8wngAAAAJ # your Google Scholar ID
+x_username: shreyas_vinaya

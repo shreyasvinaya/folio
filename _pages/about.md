@@ -2,26 +2,72 @@
 layout: about
 title: about
 permalink: /
-# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: AI for Science, retrosynthesis, and scientific machine learning
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
-  # more_info: >
-  #   <p>555 your office number</p>
-  #   <p>123 your address street</p>
-  #   <p>Your City, State 12345</p>
-
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 6 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
-I'm an AI Research Scientist at <a href="https://mstack.ai">MStack AI</a>, where I design Chemistry-first AI models for molecule synthesis and chemical supply chains. I completed my Bachelor of Engineering in Computer Science and Masters of Science in Chemistry from <a href="https://www.bits-pilani.ac.in/goa/" target="_blank">BITS Pilani, Goa Campus</a>.
 
-Previously, I was a Research Fellow at <a href="https://www.deepforestsci.com/" target="_blank">Deep Forest Sciences</a>, where I led the development of <b>DeepRetro</b> — a novel AI framework for retrosynthesis that achieved state-of-the-art results on multi-step synthesis benchmarks. This work was awarded the <b>$100,000 Standard Industries Chemical Innovation Challenge</b>. I completed my master's thesis at <a href="https://yale.edu" target="_blank">Yale University</a> with Prof. <a href="https://krishnaswamylab.org/" target="_blank">Smita Krishnaswamy</a>, working on geometric deep learning for molecule generation.
+<section class="home-hero">
+  <div class="home-hero-copy">
+    <p class="home-kicker">At MStack AI: chemistry-first AI for synthesis and scientific discovery.</p>
 
-I'm an active contributor to <a href="https://github.com/deepchem/deepchem" target="_blank">DeepChem</a>, the open-source drug discovery toolkit, and serve as a Google Summer of Code mentor. At BITS Pilani, I worked with Prof. <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile" target="_blank">Ashwin Srinivasan</a> at <a href="https://www.bits-pilani.ac.in/appcair/" target="_blank">APPCAIR</a> on AI for drug discovery.
+    <div class="home-intro">
+      <p class="home-intro-lead">I build AI systems for chemistry, retrosynthesis, and molecular machine learning. At <a href="https://mstack.ai" target="_blank" rel="noopener noreferrer">MStack AI</a>, I work on models and tooling for molecule synthesis, chemical supply chains, and research workflows that need both scientific accuracy and practical deployment.</p>
 
-My research interests span <b>AI for Chemistry, Drug Discovery, Graph Neural Networks, Large Language Models</b>, and <b>Computational Biology</b>.
+      <p class="home-intro-support">Previously, I led <strong>DeepRetro</strong> at <a href="https://www.deepforestsci.com/" target="_blank" rel="noopener noreferrer">Deep Forest Sciences</a>, an iterative retrosynthesis framework that reached state-of-the-art multi-step synthesis performance and won the finalist prize of <strong>$100,000</strong> from <strong>Standard Industries Chemical Innovation Challenge</strong>. I completed a Bachelor of Engineering in Computer Science and a Master of Science in Chemistry at <a href="https://www.bits-pilani.ac.in/goa/" target="_blank" rel="noopener noreferrer">BITS Pilani, Goa Campus</a>, and have contributed research and open-source work with <a href="https://yale.edu" target="_blank" rel="noopener noreferrer">Yale University</a>, <a href="https://github.com/deepchem/deepchem" target="_blank" rel="noopener noreferrer">DeepChem</a>, and <a href="https://www.bits-pilani.ac.in/appcair/" target="_blank" rel="noopener noreferrer">APPCAIR</a>.</p>
+    </div>
+
+    <div class="home-cta-row">
+      <a class="home-cta home-cta-primary" href="{{ '/publications/' | relative_url }}">View Publications</a>
+      <a class="home-cta" href="{{ '/assets/pdf/shreyas_v_resume.pdf' | relative_url }}">Download CV</a>
+      <a class="home-cta" href="https://scholar.google.com/citations?user=cUJ8wngAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a class="home-cta" href="https://github.com/shreyasvinaya" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+
+    <div class="home-proof-grid">
+      <div class="home-proof-card">
+        <span class="home-proof-label">Current Role</span>
+        <strong>AI Research Scientist</strong>
+        <p>Shipping chemistry-focused AI systems at MStack AI.</p>
+      </div>
+      <div class="home-proof-card">
+        <span class="home-proof-label">Flagship Project</span>
+        <strong>DeepRetro</strong>
+        <p>Iterative LLM reasoning for collaborative retrosynthesis planning.</p>
+      </div>
+      <div class="home-proof-card">
+        <span class="home-proof-label">Recent Milestone</span>
+        <strong>Nature Scientific Reports</strong>
+        <p>DeepRetro accepted in 2026 after winning the Standard Industries challenge.</p>
+      </div>
+      <div class="home-proof-card">
+        <span class="home-proof-label">Open Source</span>
+        <strong>DeepChem and GSoC</strong>
+        <p>Mentoring and contributing to scientific ML infrastructure in the open.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <aside class="home-hero-media">
+    <div class="home-portrait-frame">
+      {% include figure.liquid loading="eager" path="assets/img/prof_pic.jpg" class="img-fluid z-depth-1 home-portrait-image" alt="Portrait of Shreyas Vinaya Sathyanarayana" cache_bust=true %}
+    </div>
+    <div class="home-portrait-note">
+      <span class="home-proof-label">Current Focus</span>
+      <strong>Chemistry-first AI systems</strong>
+      <p>Foundation models, retrosynthesis planning, molecule discovery, and research tooling built for real scientific use.</p>
+    </div>
+  </aside>
+</section>

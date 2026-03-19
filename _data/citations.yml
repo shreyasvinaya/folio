@@ -1,0 +1,51 @@
+metadata:
+  last_updated: '2026-03-20'
+papers:
+  cUJ8wngAAAAJ:9yKSN-GCB0IC:
+    citations: 0
+    title: CountCLIP--[Re] Teaching CLIP to Count to Ten
+    year: '2024'
+  cUJ8wngAAAAJ:IjCSPb-OGe4C:
+    citations: 0
+    title: Open-Source Molecular Processing Pipeline for Generating Molecules
+    year: '2024'
+  cUJ8wngAAAAJ:UeHWp8X0CEIC:
+    citations: 2
+    title: Implementation and Application of an Intelligibility Protocol for Interaction with an LLM
+    year: '2024'
+  cUJ8wngAAAAJ:W7OEmFMy1HYC:
+    citations: 1
+    title: 'DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling'
+    year: '2025'
+  cUJ8wngAAAAJ:WF5omc3nYNoC:
+    citations: 4
+    title: DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning
+    year: '2026'
+  cUJ8wngAAAAJ:Y0pCki6q_DkC:
+    citations: 7
+    title: 'ChemBERTa-3: an open source training framework for chemical foundation models'
+    year: '2026'
+  cUJ8wngAAAAJ:YsMSGLbcyi4C:
+    citations: 0
+    title: "Multi-Turn Human\u2013LLM Interaction Through the Lens of a Two-Way Intelligibility Protocol"
+    year: '2024'
+  cUJ8wngAAAAJ:d1gkVwhDpl0C:
+    citations: 0
+    title: Predicting ATP binding sites in protein sequences using Deep Learning and Natural Language Processing
+    year: '2024'
+  cUJ8wngAAAAJ:u-x6o8ySG0sC:
+    citations: 14
+    title: Generating novel leads for drug discovery using LLMs with logical feedback
+    year: '2024'
+  cUJ8wngAAAAJ:u5HHmVD_uO8C:
+    citations: 4
+    title: Speech to equation conversion using a poe tagger
+    year: '2022'
+  cUJ8wngAAAAJ:ufrVoPGSRksC:
+    citations: 0
+    title: 'Protect: Steerable Retrosynthesis through Neuro-Symbolic State Encoding'
+    year: '2026'
+  cUJ8wngAAAAJ:zYLM7Y9cAGgC:
+    citations: 0
+    title: Open-source Polymer Generative Pipeline
+    year: '2024'
