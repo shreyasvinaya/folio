@@ -190,7 +190,7 @@
       {{ entry.note | strip }}
     </div>
 
-    {% assign citation_count = nil %}
+    {% assign citation_count = null %}
     {% if site.enable_publication_badges.google_scholar and entry.google_scholar_id and site.data.citations and site.data.citations.papers %}
       {% assign scholar_id_key = site.scholar_userid | append: ':' | append: entry.google_scholar_id %}
       {% assign publication_key = entry.google_scholar_id %}
@@ -281,7 +281,7 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
-      {% if citation_count != nil %}
+      {% if citation_count != null %}
         <a
           href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
           class="btn btn-sm z-depth-0 publication-metric publication-metric-scholar"
