@@ -8,11 +8,11 @@ middle_name:
 last_name: Vinaya Sathyanarayana
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Shreyas V, sharing work in AI for chemistry, retrosynthesis, molecular machine learning, and open-source scientific software.
+  Personal website of Shreyas V, sharing work in AI for Science, retrosynthesis, molecular machine learning, and open-source scientific software.
 footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a>.
   Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: AI for chemistry, retrosynthesis, molecular machine learning, scientific AI, computational chemistry
+keywords: AI for Science, retrosynthesis, molecular machine learning, scientific AI, computational chemistry
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -61,7 +61,7 @@ search_enabled: true
 socials_in_search: true
 posts_in_search: true
 bib_search: true
-navbar_subtitle: AI for chemistry
+navbar_subtitle: AI for Science
 
 # Dimensions
 max_width: 1080px
@@ -97,7 +97,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Shreyas Blog # blog_name will be displayed in your blog page
-blog_description: Notes on AI for chemistry, molecular ML, and research engineering
+blog_description: Notes on AI for Science, molecular ML, and research engineering
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
