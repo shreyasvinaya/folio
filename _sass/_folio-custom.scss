@@ -199,6 +199,8 @@ a {
   display: grid;
   gap: 1rem;
   align-content: start;
+  justify-items: start;
+  width: min(100%, 32rem);
 }
 
 .home-intro {
@@ -304,22 +306,28 @@ a {
 
 .home-portrait-frame {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0.25rem 0 0;
+  width: 100%;
 
   figure {
     margin: 0;
-    width: 100%;
+    width: min(100%, 320px);
   }
 }
 
 .home-portrait-image {
-  width: min(100%, 320px);
+  display: block;
+  width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 16%;
   border: 4px solid rgba(255, 253, 249, 0.95);
   border-radius: 1.75rem;
+}
+
+.home-portrait-note {
+  width: min(100%, 320px);
 }
 
 .page-intro {
@@ -658,7 +666,7 @@ html[data-theme="dark"] {
 
   .home-hero-media {
     order: -1;
-    max-width: 21rem;
+    max-width: 20rem;
   }
 
   .home-proof-grid {
