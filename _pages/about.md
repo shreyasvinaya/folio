@@ -20,7 +20,7 @@ latest_posts:
 
 <section class="home-hero">
   <div class="home-hero-copy">
-    <p class="home-kicker">Currently at MStack AI, building chemistry-first AI systems for synthesis planning and scientific discovery.</p>
+    <p class="home-kicker">At MStack AI: chemistry-first AI for synthesis and scientific discovery.</p>
 
     <div class="home-intro">
       <p class="home-intro-lead">I build AI systems for chemistry, retrosynthesis, and molecular machine learning. At <a href="https://mstack.ai" target="_blank" rel="noopener noreferrer">MStack AI</a>, I work on models and tooling for molecule synthesis, chemical supply chains, and research workflows that need both scientific accuracy and practical deployment.</p>

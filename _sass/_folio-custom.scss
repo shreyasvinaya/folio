@@ -201,6 +201,7 @@ a {
   align-content: start;
   justify-items: start;
   width: min(100%, 32rem);
+  padding-top: 1.85rem;
 }
 
 .home-intro {
@@ -275,12 +276,14 @@ a {
 .home-portrait-note {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.45rem;
   padding: 1.15rem 1.2rem;
   border: 1px solid rgba(18, 32, 51, 0.08);
   border-radius: 1.35rem;
   background: linear-gradient(180deg, rgba(255, 253, 249, 0.98), rgba(248, 242, 234, 0.92));
   box-shadow: 0 16px 34px rgba(18, 32, 51, 0.07);
+  text-align: center;
 
   strong {
     font-size: 1.05rem;
@@ -328,6 +331,8 @@ a {
 
 .home-portrait-note {
   width: min(100%, 320px);
+  min-height: 18.5rem;
+  justify-content: center;
 }
 
 .page-intro {
@@ -667,6 +672,7 @@ html[data-theme="dark"] {
   .home-hero-media {
     order: -1;
     max-width: 20rem;
+    padding-top: 0;
   }
 
   .home-proof-grid {
