@@ -360,6 +360,51 @@ a {
 .selected-publications-shell {
   display: grid;
   gap: 1rem;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.selected-publications-shell .publication-row {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.selected-publications-shell .publication-row > .abbr,
+.selected-publications-shell .publication-row > .publication-body {
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+  flex: none;
+}
+
+.selected-publications-shell .publication-row > .abbr {
+  margin-bottom: 1rem;
+}
+
+.selected-publications-shell .publication-row .abbr abbr {
+  display: inline-flex;
+  width: auto !important;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.selected-publications-shell .publication-row .hidden {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.selected-publications-shell .publication-row .hidden pre,
+.selected-publications-shell .publication-row .hidden code {
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .section-linkout a {
