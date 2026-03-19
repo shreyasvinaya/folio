@@ -25,6 +25,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
 <div class="home-intro">
   <p class="home-intro-lead">I am an AI Research Scientist at <a href="https://mstack.ai" target="_blank" rel="noopener noreferrer">MStack AI</a>, where I design chemistry-first AI models for molecule synthesis and chemical supply chains. I completed a Bachelor of Engineering in Computer Science and a Master of Science in Chemistry at <a href="https://www.bits-pilani.ac.in/goa/" target="_blank" rel="noopener noreferrer">BITS Pilani, Goa Campus</a>.</p>
 

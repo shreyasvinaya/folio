@@ -58,8 +58,7 @@
   padding: 1rem 1.05rem;
   border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: 1rem;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 247, 251, 0.92));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 247, 251, 0.92));
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 
   strong {
@@ -98,8 +97,7 @@
 html[data-theme="dark"] {
   .home-highlight-card {
     border-color: rgba(148, 163, 184, 0.18);
-    background:
-      linear-gradient(180deg, rgba(17, 24, 39, 0.88), rgba(15, 23, 42, 0.82));
+    background: linear-gradient(180deg, rgba(17, 24, 39, 0.88), rgba(15, 23, 42, 0.82));
     box-shadow: none;
   }
 
