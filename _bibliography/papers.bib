@@ -6,23 +6,33 @@
 % =============================================================================
 
 @article{deepretro2026,
-  bibtex_show={true},
+	title = {{DeepRetro} discovers retrosynthetic pathways through iterative large language model reasoning},
+	volume = {16},
+	issn = {2045-2322},
+	url = {https://doi.org/10.1038/s41598-026-38821-z},
+	doi = {10.1038/s41598-026-38821-z},
+	abstract = {Synthesizing complex natural products is a grand challenge in organic chemistry. We present DeepRetro, a significant advancement in computational retrosynthesis that discovers viable synthetic routes for molecules previously considered too complex for automated methods. DeepRetro is a novel, open-source framework that tightly integrates large language models (LLMs), traditional retrosynthetic engines, and expert human feedback into an iterative design loop. Unlike prior approaches that rely on either template-based methods or unconstrained LLMs, our hybrid system combines the precision of templates with the generative flexibility of LLMs, governed by rigorous chemical validity checks and recursive refinement. This system dynamically explores and revises synthetic pathways, guided by algorithmic checks and expert input through an interactive interface. While DeepRetro shows strong performance on standard benchmarks, its main strength is its ability to propose novel, viable pathways for highly complex natural products. Through case studies, we demonstrate how this approach facilitates new total synthesis routes and enhances human-machine collaboration. DeepRetro serves as a working model for applying LLMs to scientific discovery, and we release it as an open-source tool to accelerate progress in drug discovery and materials design.},
+	number = {1},
+	journal = {Nature Scientific Reports},
   abbr={Nat Sci Rep},
-  title={DeepRetro: Retrosynthetic Pathway Discovery using Iterative LLM Reasoning},
-  author={Sathyanarayana, S. V. and Hiremath, S. D. and Shah, R. and Panda, R. and Jana, R. and Singh, R. and Ramsundar, B.},
-  journal={Nature Scientific Reports},
-  year={2026},
   selected={true},
   category={journal},
-  abstract={DeepRetro is a novel, open-source hybrid AI framework that solves complex retrosynthesis problems by integrating the generative power of LLMs with the precision of traditional template-based engines. Achieved state-of-the-art performance with 96.3% success rate on the USPTO-190 multi-step benchmark.},
+	author = {Sathyanarayana, Shreyas Vinaya and Hiremath, Sharanabasava D. and Rahil Kirankumar, Shah and Panda, Rishikesh and Jana, Rahul and Singh, Riya and Irfan, Rida and Murali, Ashwin and Ramsundar, Bharath},
+	month = feb,
+	year = {2026},
+	pages = {8448},
+  bibtex_show={true},
 }
+
 
 @article{chemberta3_2026,
   bibtex_show={true},
   abbr={RSC DD},
+  doi={10.1039/D5DD00348B},
   title={ChemBERTa-3: An Open Source Training Framework for Chemical Foundation Models},
   author={Singh, R. and Barsainyan, A. A. and Irfan, R. and Amorin, C. J. and He, S. and Davis, T. and Thiagarajan, A. and Sankaran, S. and Chithrananda, S. and Ahmad, W. and Jones, D. and McLoughlin, K. and Kim, H. and Bhutani, A. and Sathyanarayana, S. V. and Viswanathan, V. and Allen, J. E. and Ramsundar, B.},
   journal={Royal Society of Chemistry's Digital Discovery},
+  abstract={The rapid advancement of machine learning in computational chemistry has opened new doors for designing molecules, predicting molecular properties, and discovering novel materials. However, building scalable and robust models for molecular machine learning remains a significant challenge due to the vast size and complexity of chemical space. Recent advances in chemical foundation models hold considerable promise for addressing these challenges, but such models remain difficult to train and are often fully or partially proprietary. For this reason, we introduce ChemBERTa-3, an open source training and benchmarking framework designed to train and fine-tune large-scale chemical foundation models. ChemBERTa-3 provides: (i) unified, reproducible infrastructure for model pretraining and fine-tuning, (ii) systematic benchmarking tooling to evaluate proposed chemical foundation model architectures on tasks from the MoleculeNet suite, and (iii) fully open release of model weights, training configurations, and deployment workflows. Our experiments demonstrate that although both graph-based and transformer-based architectures perform well at small scale, transformer-based models are considerably easier to scale. We also discuss how to overcome the numerous challenges that arise when attempting to reproducibly construct large chemical foundation models, ranging from subtle benchmarking issues to training instabilities. We test ChemBERTa-3 infrastructure in both an AWS-based Ray deployment and in an on-premise high-performance computing cluster to verify the reproducibility of the framework and results. We anticipate that ChemBERTa-3 will serve as a foundational building block for next-generation chemical foundation models and for the broader project of creating open source LLMs for scientific applications. In support of reproducible and extensible science, we have open sourced all ChemBERTa3 models and our Ray cluster configurations.},
   year={2026},
   selected={true},
   category={journal},
@@ -71,6 +81,7 @@
   booktitle={Championing Open-source DEvelopment in ML Workshop at ICML 2025},
   year={2025},
   category={workshop},
+  url={https://openreview.net/forum?id=jWZV6hWCeX},
 }
 
 @inproceedings{polymer_pipeline2025,

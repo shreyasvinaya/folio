@@ -269,8 +269,8 @@ display_categories: [] # these categories will be displayed on the front page of
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [V, Vinaya, Shreyas, Sathyanarayana, V. Sathyanarayana]
-  first_name: [Shreyas, V, Vinaya, S. V., S.]
+  last_name: [V, Vinaya, Shreyas, Sathyanarayana, V. Sathyanarayana, Vinaya Sathyanarayana]
+  first_name: [Shreyas, V, Vinaya, S. V., S., Shreyas Vinaya]
 
   style: apa
   locale: en
