@@ -11,20 +11,10 @@ nav_order: 2
 
 <div class="page-shell">
   <p class="page-kicker">Research output</p>
-  <p class="page-intro">Work across chemistry, molecular machine learning, scientific AI, and open-source tooling. Selected papers are featured first, followed by the complete list grouped by venue type.</p>
+  <p class="page-intro">Work across chemistry, molecular machine learning, scientific AI, and open-source tooling, organized by venue type for faster browsing.</p>
 </div>
 
 {% include bib_search.liquid %}
-
-<section class="publication-section publication-section-featured">
-  <div class="section-heading">
-    <h2>Selected publications</h2>
-    <p>Representative work in retrosynthesis, chemical foundation models, molecular processing pipelines, and scientific ML.</p>
-  </div>
-  <div class="publications publications-featured">
-    {% bibliography --group_by none --query @*[selected=true]* %}
-  </div>
-</section>
 
 <section class="publication-section">
   <div class="section-heading">

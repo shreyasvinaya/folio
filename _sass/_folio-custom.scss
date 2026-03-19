@@ -330,6 +330,16 @@ a {
   line-height: 1.75;
 }
 
+.news-scroll-frame {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.35rem;
+}
+
+.news-scroll-frame table {
+  margin-bottom: 0;
+}
+
 .section-heading {
   display: grid;
   gap: 0.45rem;
