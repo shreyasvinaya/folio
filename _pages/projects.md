@@ -10,7 +10,10 @@ horizontal: false
 ---
 
 <!-- pages/projects.md -->
-<p class="page-intro">A compact set of research and engineering projects, focused on molecular machine learning, scientific AI, and applied LLM systems.</p>
+<div class="page-shell">
+  <p class="page-kicker">Selected projects</p>
+  <p class="page-intro">A compact set of research and engineering projects centered on molecular machine learning, scientific AI, and applied LLM systems. This page stays intentionally curated rather than listing every experiment.</p>
+</div>
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

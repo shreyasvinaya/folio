@@ -2,8 +2,8 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      <a class="navbar-brand title brand-lockup" href="{{ '/' | relative_url }}" aria-label="Home">
+        <span class="brand-name">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
@@ -19,11 +19,11 @@
           {% else %}
             {{- site.title -}}
           {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% social_links %}</div>
-      {% endif %}
+        </span>
+        {% if site.navbar_subtitle %}
+          <span class="brand-subtitle">{{ site.navbar_subtitle }}</span>
+        {% endif %}
+      </a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -120,8 +120,12 @@
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              <button id="search-toggle" class="nav-search-trigger" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">
+                  <span class="nav-search-label">Search</span>
+                  <span class="nav-search-hint">Ctrl K</span>
+                  <i class="ti ti-search"></i>
+                </span>
               </button>
             </li>
           {% endif %}

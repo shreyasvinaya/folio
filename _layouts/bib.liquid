@@ -1,6 +1,6 @@
 ---
 ---
-<div class="row">
+<div class="row publication-row{% if entry.selected == 'true' or entry.selected == true %} publication-featured{% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -46,7 +46,10 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %} publication-body">
+    {% if entry.selected == 'true' or entry.selected == true %}
+      <div class="publication-kicker">Selected work</div>
+    {% endif %}
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -180,10 +183,10 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
+    <div class="periodical publication-venue">
       {{ periodical | strip }}
     </div>
-    <div class="periodical">
+    <div class="periodical publication-note">
       {{ entry.note | strip }}
     </div>
 

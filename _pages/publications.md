@@ -9,30 +9,59 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+<div class="page-shell">
+  <p class="page-kicker">Research output</p>
+  <p class="page-intro">Work across chemistry, molecular machine learning, scientific AI, and open-source tooling. Selected papers are featured first, followed by the complete list grouped by venue type.</p>
+</div>
+
 {% include bib_search.liquid %}
 
-<p class="page-intro">Selected work is organized by publication type. Search remains available for quickly locating a paper, venue, or coauthor.</p>
+<section class="publication-section publication-section-featured">
+  <div class="section-heading">
+    <h2>Selected publications</h2>
+    <p>Representative work in retrosynthesis, chemical foundation models, molecular processing pipelines, and scientific ML.</p>
+  </div>
+  <div class="publications publications-featured">
+    {% bibliography --group_by none --query @*[selected=true]* %}
+  </div>
+</section>
 
-## Journal Publications
+<section class="publication-section">
+  <div class="section-heading">
+    <h2>Journal publications</h2>
+    <p>Peer-reviewed journal articles and accepted long-form research papers.</p>
+  </div>
+  <div class="publications">
+    {% bibliography -f papers -q @*[category=journal] %}
+  </div>
+</section>
 
-<div class="publications">
-{% bibliography -f papers -q @*[category=journal] %}
-</div>
+<section class="publication-section">
+  <div class="section-heading">
+    <h2>Conference papers</h2>
+    <p>Full conference publications in applied machine learning and scientific computing.</p>
+  </div>
+  <div class="publications">
+    {% bibliography -f papers -q @*[category=conference] %}
+  </div>
+</section>
 
-## Conference Papers
+<section class="publication-section">
+  <div class="section-heading">
+    <h2>Workshop papers</h2>
+    <p>Research prototypes, open-source systems, and workshop contributions around chemistry and scientific AI.</p>
+  </div>
+  <div class="publications">
+    {% bibliography -f papers -q @*[category=workshop] %}
+  </div>
+</section>
 
-<div class="publications">
-{% bibliography -f papers -q @*[category=conference] %}
-</div>
-
-## Workshop Papers
-
-<div class="publications">
-{% bibliography -f papers -q @*[category=workshop] %}
-</div>
-
-## Preprints
-
-<div class="publications">
-{% bibliography -f papers -q @*[category=preprint] %}
-</div>
+<section class="publication-section">
+  <div class="section-heading">
+    <h2>Preprints</h2>
+    <p>Early-stage work that is publicly available and still evolving.</p>
+  </div>
+  <div class="publications">
+    {% bibliography -f papers -q @*[category=preprint] %}
+  </div>
+</section>

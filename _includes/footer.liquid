@@ -1,11 +1,5 @@
 {% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
-  {% if site.impressum_path %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-  {% endif %}
+  {{ site.footer_text }}
   {% if site.last_updated %}
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}
@@ -13,8 +7,17 @@
 
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
+    <div class="container footer-shell mt-0">
+      <div class="footer-identity">
+        <span class="footer-name">{{ site.first_name }} {{ site.last_name }}</span>
+        <p class="footer-tagline">AI for chemistry, retrosynthesis, and scientific machine learning.</p>
+      </div>
+      <div class="footer-meta">
+        <span>{{ footer_contents }}</span>
+        {% if site.impressum_path %}
+          <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+        {% endif %}
+      </div>
     </div>
   </footer>
 {% else %}
@@ -23,8 +26,17 @@
       {% include newsletter.liquid %}
     {% endif %}
 
-    <div class="container">
-      {{ footer_contents }}
+    <div class="container footer-shell">
+      <div class="footer-identity">
+        <span class="footer-name">{{ site.first_name }} {{ site.last_name }}</span>
+        <p class="footer-tagline">AI for chemistry, retrosynthesis, and scientific machine learning.</p>
+      </div>
+      <div class="footer-meta">
+        <span>{{ footer_contents }}</span>
+        {% if site.impressum_path %}
+          <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+        {% endif %}
+      </div>
     </div>
   </footer>
 {% endif %}
