@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-20'
+  last_updated: '2026-03-26'
 papers:
   cUJ8wngAAAAJ:9yKSN-GCB0IC:
     citations: 0
@@ -34,7 +34,7 @@ papers:
     title: Predicting ATP binding sites in protein sequences using Deep Learning and Natural Language Processing
     year: '2024'
   cUJ8wngAAAAJ:u-x6o8ySG0sC:
-    citations: 14
+    citations: 15
     title: Generating novel leads for drug discovery using LLMs with logical feedback
     year: '2024'
   cUJ8wngAAAAJ:u5HHmVD_uO8C:
