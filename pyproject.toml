@@ -1,0 +1,23 @@
+[project]
+name = "folio-citation-tools"
+version = "0.1.0"
+description = "Utility scripts and tests for folio maintenance workflows."
+requires-python = ">=3.13"
+dependencies = [
+  "pyyaml",
+  "scholarly",
+]
+
+[dependency-groups]
+dev = [
+  "pytest",
+  "ruff",
+  "ty>=0.0.26",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
