@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-06'
+  last_updated: '2026-05-05'
 papers:
   cUJ8wngAAAAJ:9yKSN-GCB0IC:
     citations: 0
@@ -18,11 +18,11 @@ papers:
     title: 'DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling'
     year: '2025'
   cUJ8wngAAAAJ:WF5omc3nYNoC:
-    citations: 5
+    citations: 6
     title: DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning
     year: '2026'
   cUJ8wngAAAAJ:Y0pCki6q_DkC:
-    citations: 9
+    citations: 10
     title: 'ChemBERTa-3: an open source training framework for chemical foundation models'
     year: '2026'
   cUJ8wngAAAAJ:YsMSGLbcyi4C:
@@ -38,7 +38,7 @@ papers:
     title: Predicting ATP binding sites in protein sequences using Deep Learning and Natural Language Processing
     year: '2024'
   cUJ8wngAAAAJ:u-x6o8ySG0sC:
-    citations: 15
+    citations: 17
     title: Generating novel leads for drug discovery using LLMs with logical feedback
     year: '2024'
   cUJ8wngAAAAJ:u5HHmVD_uO8C:

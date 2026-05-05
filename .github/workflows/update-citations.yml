@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.PAT != '' && secrets.PAT || github.token }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
@@ -49,13 +49,14 @@ jobs:
         id: run_citation_update
         shell: bash
         env:
-          SCHOLAR_FETCH_TIMEOUT_SECONDS: "60"
-          ALLOW_STALE_ON_FETCH_FAILURE: "1"
+          SCHOLAR_FETCH_TIMEOUT_SECONDS: "45"
+          SCHOLAR_PUBLICATION_FETCH_TIMEOUT_SECONDS: "10"
+          ALLOW_STALE_ON_FETCH_FAILURE: "0"
         run: |
-          echo "🚀 Running citation update script (single attempt)..."
+          echo "🚀 Running citation update script..."
           start_time=$(date)
           end_time=$(date)
-          if timeout 90 python bin/update_scholar_citations.py; then
+          if timeout 240 python bin/update_scholar_citations.py; then
             end_time=$(date)
             echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
             echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
