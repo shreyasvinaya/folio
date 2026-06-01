@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-22'
+  last_updated: '2026-06-01'
 papers:
   cUJ8wngAAAAJ:9yKSN-GCB0IC:
     citations: 0
@@ -26,7 +26,7 @@ papers:
     title: DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning
     year: '2026'
   cUJ8wngAAAAJ:Y0pCki6q_DkC:
-    citations: 12
+    citations: 14
     title: 'ChemBERTa-3: an open source training framework for chemical foundation models'
     year: '2026'
   cUJ8wngAAAAJ:YsMSGLbcyi4C:
@@ -41,6 +41,10 @@ papers:
     citations: 0
     title: Predicting ATP binding sites in protein sequences using Deep Learning and Natural Language Processing
     year: '2024'
+  cUJ8wngAAAAJ:roLk4NBRz8UC:
+    citations: 0
+    title: Recursive generative planning system with verification modules and user feedback integration
+    year: '2026'
   cUJ8wngAAAAJ:u-x6o8ySG0sC:
     citations: 17
     title: Generating novel leads for drug discovery using LLMs with logical feedback
