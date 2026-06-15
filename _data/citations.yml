@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-01'
+  last_updated: '2026-06-15'
 papers:
   cUJ8wngAAAAJ:9yKSN-GCB0IC:
     citations: 0
@@ -13,10 +13,18 @@ papers:
     citations: 0
     title: Generative-discriminative artifical-intelligence framework for digital-twin discovery of thin-film materials
     year: '2026'
+  cUJ8wngAAAAJ:Se3iqnhoufwC:
+    citations: 0
+    title: 'HiRes: Inspectable Precedent Memory for Reaction Condition Recommendation'
+    year: '2026'
   cUJ8wngAAAAJ:UeHWp8X0CEIC:
     citations: 2
     title: Implementation and Application of an Intelligibility Protocol for Interaction with an LLM
     year: '2024'
+  cUJ8wngAAAAJ:UebtZRa9Y70C:
+    citations: 0
+    title: 'RETROSPECT: RETROsynthesis via Sequential Prediction, and Chemically Transformed-ranking'
+    year: '2026'
   cUJ8wngAAAAJ:W7OEmFMy1HYC:
     citations: 1
     title: 'DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling'
@@ -26,17 +34,13 @@ papers:
     title: DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning
     year: '2026'
   cUJ8wngAAAAJ:Y0pCki6q_DkC:
-    citations: 14
+    citations: 20
     title: 'ChemBERTa-3: an open source training framework for chemical foundation models'
     year: '2026'
   cUJ8wngAAAAJ:YsMSGLbcyi4C:
     citations: 0
     title: "Multi-Turn Human\u2013LLM Interaction Through the Lens of a Two-Way Intelligibility Protocol"
     year: '2024'
-  cUJ8wngAAAAJ:_FxGoFyzp5QC:
-    citations: 0
-    title: 'Protect: Steerable Retrosynthesis through Neuro-Symbolic State Encoding'
-    year: '2026'
   cUJ8wngAAAAJ:d1gkVwhDpl0C:
     citations: 0
     title: Predicting ATP binding sites in protein sequences using Deep Learning and Natural Language Processing
@@ -46,7 +50,7 @@ papers:
     title: Recursive generative planning system with verification modules and user feedback integration
     year: '2026'
   cUJ8wngAAAAJ:u-x6o8ySG0sC:
-    citations: 17
+    citations: 18
     title: Generating novel leads for drug discovery using LLMs with logical feedback
     year: '2024'
   cUJ8wngAAAAJ:u5HHmVD_uO8C:
