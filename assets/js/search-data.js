@@ -112,6 +112,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-deepretro-retrosynthetic-pathway-discovery-using-iterative-llm-reasoning-has-been-accepted-at-nature-scientific-reports",
           title: 'Our paper “DeepRetro: Retrosynthetic Pathway Discovery using Iterative LLM Reasoning” has been accepted...',
           description: "",
+          section: "News",},{id: "news-our-paper-retrospect-retrosynthesis-via-sequential-prediction-and-chemically-transformed-ranking-has-been-accepted-at-the-ai-for-science-workshop-at-icml-2026",
+          title: 'Our paper “RETROSPECT: RETROsynthesis via Sequential Prediction, and Chemically Transformed-ranking” has been accepted...',
+          description: "",
+          section: "News",},{id: "news-new-preprint-out-hires-inspectable-precedent-memory-for-reaction-condition-recommendation-is-now-available-on-arxiv",
+          title: 'New preprint out: “HiRes: Inspectable Precedent Memory for Reaction Condition Recommendation” is now...',
+          description: "",
           section: "News",},{id: "projects-unified-privacy-guard",
           title: 'Unified Privacy Guard',
           description: "A privacy protection system that combines face detection, browser monitoring, LLM-based sensitivity checks, and automatic screen dimming.",
@@ -122,6 +128,16 @@ ninja.data = [{
           description: "A context-aware Telegram companion for code-mixed Indian languages that explains slang, detects tone, and suggests replies.",
           section: "Projects",handler: () => {
               window.location.href = "/folio/projects/2_bhashabridge/";
+            },},{id: "projects-patra",
+          title: 'Patra',
+          description: "A self-hostable, Git-backed document and static-site publishing platform with authenticated share links and an agent-friendly CLI.",
+          section: "Projects",handler: () => {
+              window.location.href = "/folio/projects/3_patra/";
+            },},{id: "projects-metamorph",
+          title: 'Metamorph',
+          description: "An emotionally responsive humanoid bot with knowledge capture and speech generation powered by generative large language models.",
+          section: "Projects",handler: () => {
+              window.location.href = "/folio/projects/4_metamorph/";
             },},{
         id: 'social-cv',
         title: 'CV',
