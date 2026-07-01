@@ -3,7 +3,7 @@ layout: page
 title: BhashaBridge
 description: A context-aware Telegram companion for code-mixed Indian languages that explains slang, detects tone, and suggests replies.
 img: assets/img/10.jpg
-importance: 2
+importance: 4
 category: work
 redirect: https://github.com/shreyasvinaya/bhashabridge
 github: https://github.com/shreyasvinaya/bhashabridge
