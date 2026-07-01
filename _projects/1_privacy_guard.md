@@ -3,7 +3,7 @@ layout: page
 title: Unified Privacy Guard
 description: A privacy protection system that combines face detection, browser monitoring, LLM-based sensitivity checks, and automatic screen dimming.
 img: assets/img/11.jpg
-importance: 1
+importance: 3
 category: work
 redirect: https://github.com/riskycase/privacy-guard-qcomm-hackathon
 github: https://github.com/riskycase/privacy-guard-qcomm-hackathon

@@ -6,6 +6,20 @@
     - name: Languages
       value: English
 
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Tools and Languages
+      items:
+        - Python, C, MySQL, Git, LaTeX
+        - PyTorch, TensorFlow, Pandas
+        - CI/CD Pipelines, AWS, Azure
+    - title: Research Domains
+      items:
+        - Machine Learning, Generative AI, LLMs
+        - Drug Discovery, Computational Bio-Chemistry
+        - NLP, Graph Neural Networks (GNNs)
+
 - title: Education
   type: time_table
   contents:
@@ -33,17 +47,27 @@
       institution: MStack AI
       year: 2025-now
       description:
-        - Designing novel Chemistry-first AI models to tackle Molecule Synthesis and Chemical supply chains
-        - Led the design and development of chemical foundational models for chemical reaction understanding
+        - Designing novel Chemistry-first AI models to tackle molecule synthesis and chemical supply chains
+        - Engineered multi-GPU distributed training pipelines for novel chemical foundation models in reaction understanding
+        - Built chemistry tools and agentic systems for automated retrosynthesis, condition prediction, and procedure generation
+        - Scaled intensive cheminformatics and Model Context Protocol (MCP) tools across GPU clusters for high-performance execution
+        - Co-authored state-of-the-art research on reaction condition recommendation (HiRes) and modular retrosynthesis (RETROSPECT, accepted at ICML 2026 AI for Science Workshop)
     - title: Research Fellow (DeepRetro Lead)
       institution: Deep Forest Sciences
       year: 2023-2025
       description:
         - Led the design and development of DeepRetro, a Chemist's AI Co-Pilot for Collaborative Retrosynthesis
         - Architected a core "iterative LLM reasoning" loop integrating generative LLMs with traditional template-based engines
+        - Engineered a rigorous validation pipeline to check LLM-generated pathways for chemical validity, stability, and hallucinations
         - Achieved state-of-the-art 96.3% success rate on the challenging USPTO-190 multi-step benchmark
         - Generated viable, previously unreported synthetic pathways for complex natural products like Ohuamine C
         - Migrated models in the open-source drug discovery toolkit DeepChem from TensorFlow to PyTorch, increasing user base by 92%
+    - title: Visiting Researcher Intern
+      institution: Yale University
+      year: 2024-2025
+      description:
+        - Researching molecule generation models using geometric deep learning with Prof. Smita Krishnaswamy
+        - Developing novel algorithms to enhance molecular design efficiency
     - title: Research Intern
       institution: Harvard Medical School
       year: 2024-2025
@@ -128,6 +152,12 @@
     - title: "ChemBERTa-3: An Open Source Training Framework for Chemical Foundation Models"
       year: 2026
       description: Accepted at Royal Society of Chemistry's Digital Discovery
+    - title: "RETROSPECT: RETROsynthesis via Sequential Prediction, and Chemically Transformed-ranking"
+      year: 2026
+      description: Accepted at the AI for Science Workshop at ICML 2026
+    - title: "HiRes: Inspectable Precedent Memory for Reaction Condition Recommendation"
+      year: 2026
+      description: arXiv preprint arXiv:2605.21420
     - title: "DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling"
       year: 2025
       description: Championing Open-source DEvelopment in ML Workshop @ ICML25
@@ -150,6 +180,22 @@
       year: 2022
       description: IEEE 7th International conference for Convergence in Technology (I2CT)
 
+- title: Leadership and Mentoring
+  type: time_table
+  contents:
+    - title: Mentor, DeepChem
+      institution: Google Summer of Code
+      year: 2024-2025
+      description:
+        - Mentored the addition of polymer generative pipelines to the open-source library DeepChem
+        - Guided porting of the Chemception model from TensorFlow to PyTorch
+    - title: ML Lead, Google Developer Student Clubs
+      institution: BITS Pilani, Goa Campus
+      year: 2022-2023
+      description:
+        - Guided a group of 25+ ML enthusiasts through weekly ML training sessions
+        - Organized hackathons, mentored ML model building, and fostered ML research exploration
+
 - title: Honors and Awards
   type: time_table
   contents:
@@ -157,6 +203,23 @@
       items:
         - Finalist ($100,000) - Standard Industries Chemical Innovation Challenge
         - 2nd Runner up - ACM Goa Chapter's event PitchIt!
+
+- title: Certifications
+  type: time_table
+  contents:
+    - year: 2022
+      items:
+        - Machine Learning - Stanford University, Coursera
+        - Neural Networks and Deep Learning - DeepLearning.ai, Coursera
+        - Natural Language Processing with Deep Learning - Stanford University
+    - year: 2021
+      items:
+        - Fundamentals of Accelerated Data Science with RAPIDS - Nvidia DLI
+    - year: 2020
+      items:
+        - Python 3 Programming Specialization - University of Michigan, Coursera
+        - Introduction to Artificial Intelligence (AI) - IBM, Coursera
+        - What is Data Science? - IBM, Coursera
 
 - title: Academic Interests
   type: nested_list
