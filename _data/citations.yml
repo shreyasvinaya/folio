@@ -1,12 +1,16 @@
 metadata:
-  last_updated: '2026-08-10'
+  last_updated: '2026-08-28'
 papers:
+  cUJ8wngAAAAJ:3fE2CSJIrl8C:
+    citations: 0
+    title: Superhuman Centaur Retrosynthesis Through Targeted LLM-enabled Decomposition in DeepRetro2
+    year: '2026'
   cUJ8wngAAAAJ:9yKSN-GCB0IC:
     citations: 1
     title: CountCLIP--[Re] Teaching CLIP to Count to Ten
     year: '2024'
   cUJ8wngAAAAJ:IjCSPb-OGe4C:
-    citations: 1
+    citations: 2
     title: Open-Source Molecular Processing Pipeline for Generating Molecules
     year: '2024'
   cUJ8wngAAAAJ:LkGwnXOMwfcC:
@@ -17,38 +21,30 @@ papers:
     citations: 0
     title: 'HiRes: Inspectable Precedent Memory for Reaction Condition Recommendation'
     year: '2026'
-  cUJ8wngAAAAJ:UeHWp8X0CEIC:
-    citations: 2
-    title: Implementation and Application of an Intelligibility Protocol for Interaction with an LLM
-    year: '2024'
   cUJ8wngAAAAJ:UebtZRa9Y70C:
     citations: 0
     title: 'RETROSPECT: RETROsynthesis via Sequential Prediction, and Chemically Transformed-ranking'
     year: '2026'
   cUJ8wngAAAAJ:W7OEmFMy1HYC:
-    citations: 1
+    citations: 3
     title: 'DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling'
     year: '2025'
   cUJ8wngAAAAJ:WF5omc3nYNoC:
-    citations: 7
+    citations: 9
     title: DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning
     year: '2026'
   cUJ8wngAAAAJ:Y0pCki6q_DkC:
-    citations: 31
+    citations: 37
     title: 'ChemBERTa-3: an open source training framework for chemical foundation models'
     year: '2026'
   cUJ8wngAAAAJ:YsMSGLbcyi4C:
-    citations: 0
+    citations: 3
     title: "Multi-Turn Human\u2013LLM Interaction Through the Lens of a Two-Way Intelligibility Protocol"
     year: '2024'
   cUJ8wngAAAAJ:d1gkVwhDpl0C:
     citations: 0
     title: Predicting ATP binding sites in protein sequences using Deep Learning and Natural Language Processing
     year: '2024'
-  cUJ8wngAAAAJ:hqOjcs7Dif8C:
-    citations: 0
-    title: 'HiRes: Inspectable Precedent Memory for Reaction Condition Recommendation'
-    year: '2026'
   cUJ8wngAAAAJ:roLk4NBRz8UC:
     citations: 0
     title: Recursive generative planning system with verification modules and user feedback integration
