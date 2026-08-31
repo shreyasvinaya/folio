@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-28'
+  last_updated: '2026-08-31'
 papers:
   cUJ8wngAAAAJ:3fE2CSJIrl8C:
     citations: 0
@@ -10,7 +10,7 @@ papers:
     title: CountCLIP--[Re] Teaching CLIP to Count to Ten
     year: '2024'
   cUJ8wngAAAAJ:IjCSPb-OGe4C:
-    citations: 2
+    citations: 3
     title: Open-Source Molecular Processing Pipeline for Generating Molecules
     year: '2024'
   cUJ8wngAAAAJ:LkGwnXOMwfcC:
@@ -30,11 +30,11 @@ papers:
     title: 'DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling'
     year: '2025'
   cUJ8wngAAAAJ:WF5omc3nYNoC:
-    citations: 9
+    citations: 10
     title: DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning
     year: '2026'
   cUJ8wngAAAAJ:Y0pCki6q_DkC:
-    citations: 37
+    citations: 38
     title: 'ChemBERTa-3: an open source training framework for chemical foundation models'
     year: '2026'
   cUJ8wngAAAAJ:YsMSGLbcyi4C:
