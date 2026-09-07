@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-31'
+  last_updated: '2026-09-07'
 papers:
   cUJ8wngAAAAJ:3fE2CSJIrl8C:
     citations: 0
@@ -34,7 +34,7 @@ papers:
     title: DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning
     year: '2026'
   cUJ8wngAAAAJ:Y0pCki6q_DkC:
-    citations: 38
+    citations: 42
     title: 'ChemBERTa-3: an open source training framework for chemical foundation models'
     year: '2026'
   cUJ8wngAAAAJ:YsMSGLbcyi4C:
@@ -50,7 +50,7 @@ papers:
     title: Recursive generative planning system with verification modules and user feedback integration
     year: '2026'
   cUJ8wngAAAAJ:u-x6o8ySG0sC:
-    citations: 22
+    citations: 23
     title: Generating novel leads for drug discovery using llms with logical feedback
     year: '2024'
   cUJ8wngAAAAJ:u5HHmVD_uO8C:
