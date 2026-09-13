@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 import re
 import signal
@@ -14,7 +15,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 import yaml
-from scholarly import scholarly
+from scholarly import ProxyGenerator, scholarly
 
 CONFIG_FILE = Path("_data/socials.yml")
 OUTPUT_FILE = Path("_data/citations.yml")
@@ -24,6 +25,13 @@ PUBLICATION_FETCH_TIMEOUT_SECONDS = int(
     os.getenv("SCHOLAR_PUBLICATION_FETCH_TIMEOUT_SECONDS", "15")
 )
 ALLOW_STALE_ON_FETCH_FAILURE = os.getenv("ALLOW_STALE_ON_FETCH_FAILURE", "1") != "0"
+SCRAPERAPI_KEY = os.getenv("SCRAPERAPI_KEY", "").strip()
+# Set SCHOLAR_FORCE_REFRESH=1 to fetch even when the data was updated today.
+FORCE_REFRESH = os.getenv("SCHOLAR_FORCE_REFRESH", "0") == "1"
+# ScraperAPI recommends a 60 second timeout so its own retries can finish.
+SCRAPERAPI_TIMEOUT_SECONDS = 60
+SCRAPERAPI_FETCH_URL = "https://api.scraperapi.com/"
+SCRAPERAPI_ACCOUNT_URL = "https://api.scraperapi.com/account"
 CITED_BY_REGEX = re.compile(r"Cited by\s+(\d[\d,]*)")
 
 
@@ -131,6 +139,64 @@ def fetch_deadline(seconds: int):
         signal.signal(signal.SIGALRM, previous_handler)
 
 
+def report_scraperapi_usage() -> None:
+    """
+    Print the ScraperAPI request count for the current billing period.
+
+    The account endpoint does not count against the request quota. Any
+    failure is reported as a warning and otherwise ignored.
+    """
+    query = urlencode({"api_key": SCRAPERAPI_KEY})
+    try:
+        with urlopen(
+            Request(f"{SCRAPERAPI_ACCOUNT_URL}?{query}"),
+            timeout=SCRAPERAPI_TIMEOUT_SECONDS,
+        ) as response:
+            account = json.loads(response.read().decode("utf-8", errors="replace"))
+        print(
+            f"ScraperAPI usage: {account['requestCount']} / "
+            f"{account['requestLimit']} requests this period."
+        )
+    except Exception as error:
+        print(f"Warning: Could not read ScraperAPI account usage: {error}")
+
+
+def configure_scholar_proxy() -> bool:
+    """
+    Route `scholarly` requests through ScraperAPI when a key is configured.
+
+    GitHub-hosted runners are usually blocked by Google Scholar (HTTP 403), so
+    the workflow supplies a ScraperAPI key via the ``SCRAPERAPI_KEY`` secret.
+
+    Returns
+    -------
+    bool
+        True when the proxy is active, False when fetching directly.
+
+    Examples
+    --------
+    >>> configure_scholar_proxy()  # doctest: +SKIP
+    True
+    """
+    if not SCRAPERAPI_KEY:
+        print("No SCRAPERAPI_KEY set. Fetching Google Scholar directly.")
+        return False
+
+    proxy_generator = ProxyGenerator()
+    if not proxy_generator.ScraperAPI(SCRAPERAPI_KEY):
+        print(
+            "Warning: Could not set up the ScraperAPI proxy. "
+            "Fetching Google Scholar directly."
+        )
+        return False
+
+    scholarly.use_proxy(proxy_generator)
+    scholarly.set_timeout(SCRAPERAPI_TIMEOUT_SECONDS)
+    print("Fetching Google Scholar through the ScraperAPI proxy.")
+    report_scraperapi_usage()
+    return True
+
+
 def fetch_author_data(scholar_user_id: str) -> dict[str, Any]:
     """
     Fetch author details from Google Scholar.
@@ -145,7 +211,8 @@ def fetch_author_data(scholar_user_id: str) -> dict[str, Any]:
     dict[str, Any]
         Author payload including publications.
     """
-    scholarly.set_timeout(15)
+    if not configure_scholar_proxy():
+        scholarly.set_timeout(15)
     scholarly.set_retries(1)
     with fetch_deadline(FETCH_TIMEOUT_SECONDS):
         author = scholarly.search_author_id(scholar_user_id)
@@ -359,8 +426,16 @@ def fetch_publication_citation_count(scholar_user_id: str, publication_id: str) 
             "citation_for_view": f"{scholar_user_id}:{publication_id}",
         }
     )
+    target_url = f"https://scholar.google.com/citations?{query}"
+    timeout = PUBLICATION_FETCH_TIMEOUT_SECONDS
+    if SCRAPERAPI_KEY:
+        # Route through ScraperAPI; GitHub runners get HTTP 403 from Scholar.
+        proxy_query = urlencode({"api_key": SCRAPERAPI_KEY, "url": target_url})
+        target_url = f"{SCRAPERAPI_FETCH_URL}?{proxy_query}"
+        timeout = SCRAPERAPI_TIMEOUT_SECONDS
+
     request = Request(
-        f"https://scholar.google.com/citations?{query}",
+        target_url,
         headers={
             "User-Agent": (
                 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
@@ -369,7 +444,7 @@ def fetch_publication_citation_count(scholar_user_id: str, publication_id: str) 
         },
     )
 
-    with urlopen(request, timeout=PUBLICATION_FETCH_TIMEOUT_SECONDS) as response:
+    with urlopen(request, timeout=timeout) as response:
         html = response.read().decode("utf-8", errors="replace")
 
     match = CITED_BY_REGEX.search(html)
@@ -452,7 +527,7 @@ def get_scholar_citations() -> None:
         and "last_updated" in existing_data["metadata"]
     ):
         print(f"Last updated on: {existing_data['metadata']['last_updated']}")
-        if existing_data["metadata"]["last_updated"] == today:
+        if existing_data["metadata"]["last_updated"] == today and not FORCE_REFRESH:
             print("Citations data is already up-to-date. Skipping fetch.")
             return
 

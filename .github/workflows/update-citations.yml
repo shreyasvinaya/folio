@@ -6,6 +6,11 @@ on:
     - cron: "0 0 * * 3" # Wednesday
     - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: "Fetch even if citations were already updated today"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -13,6 +18,7 @@ permissions:
 jobs:
   update-citations:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -49,14 +55,18 @@ jobs:
         id: run_citation_update
         shell: bash
         env:
-          SCHOLAR_FETCH_TIMEOUT_SECONDS: "45"
+          # Scholar blocks GitHub runners (HTTP 403); route through ScraperAPI.
+          SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
+          # Proxied requests can take up to 60s each, so allow a longer deadline.
+          SCHOLAR_FETCH_TIMEOUT_SECONDS: "240"
           SCHOLAR_PUBLICATION_FETCH_TIMEOUT_SECONDS: "10"
           ALLOW_STALE_ON_FETCH_FAILURE: "0"
+          SCHOLAR_FORCE_REFRESH: ${{ inputs.force_refresh == true && '1' || '0' }}
         run: |
           echo "🚀 Running citation update script..."
           start_time=$(date)
           end_time=$(date)
-          if timeout 240 python bin/update_scholar_citations.py; then
+          if timeout 900 python bin/update_scholar_citations.py; then
             end_time=$(date)
             echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
             echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
