@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications, preprints, and workshop papers across chemistry, molecular ML, and scientific AI.
+description: Publications, preprints, workshop papers, and patent applications across chemistry, molecular ML, and scientific AI.
 nav: true
 nav_order: 2
 ---
@@ -53,5 +53,15 @@ nav_order: 2
   </div>
   <div class="publications">
     {% bibliography -f papers -q @*[category=preprint] %}
+  </div>
+</section>
+
+<section class="publication-section">
+  <div class="section-heading">
+    <h2>Patents / patent applications</h2>
+    <p>Published patent applications on generative planning systems and AI-driven materials discovery.</p>
+  </div>
+  <div class="publications">
+    {% bibliography -f papers -q @*[category=patent] %}
   </div>
 </section>
