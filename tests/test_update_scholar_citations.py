@@ -232,3 +232,67 @@ def test_raises_when_fetch_fails_without_existing_cache(
 
     with pytest.raises(SystemExit):
         module.get_scholar_citations()
+
+
+WORKFLOW_PATH = (
+    Path(__file__).resolve().parents[1]
+    / ".github"
+    / "workflows"
+    / "update-citations.yml"
+)
+
+
+def _workflow_script_step_env() -> dict[str, str]:
+    workflow = yaml.safe_load(WORKFLOW_PATH.read_text())
+    steps = workflow["jobs"]["update-citations"]["steps"]
+    step = next(s for s in steps if s.get("id") == "run_citation_update")
+    return step["env"]
+
+
+def test_workflow_stale_flag_is_read_by_script(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    env = _workflow_script_step_env()
+    assert env["ALLOW_STALE_ON_FETCH_FAILURE"] == "0"
+
+    monkeypatch.setenv("ALLOW_STALE_ON_FETCH_FAILURE", "0")
+    module = load_module()
+    assert module.ALLOW_STALE_ON_FETCH_FAILURE is False
+
+    monkeypatch.setenv("ALLOW_STALE_ON_FETCH_FAILURE", "1")
+    module = load_module()
+    assert module.ALLOW_STALE_ON_FETCH_FAILURE is True
+
+
+def test_exits_when_stale_not_allowed_and_fetch_fails(
+    monkeypatch: pytest.MonkeyPatch, tmp_path: Path
+) -> None:
+    monkeypatch.setenv("ALLOW_STALE_ON_FETCH_FAILURE", "0")
+    module = load_module()
+    output_file = tmp_path / "citations.yml"
+    existing = {
+        "metadata": {"last_updated": "2026-03-20"},
+        "papers": {"abc123:pub1": {"title": "T", "year": "2024", "citations": 3}},
+    }
+    output_file.write_text(yaml.safe_dump(existing))
+    monkeypatch.setattr(module, "OUTPUT_FILE", output_file)
+    monkeypatch.setattr(module, "load_scholar_user_id", lambda: "abc123")
+    set_today(monkeypatch, module)
+    monkeypatch.setattr(
+        module,
+        "fetch_author_data",
+        lambda _: (_ for _ in ()).throw(RuntimeError("Cannot Fetch")),
+    )
+    monkeypatch.setattr(
+        module,
+        "build_bibliography_citation_data",
+        lambda scholar_user_id, update_date: (_ for _ in ()).throw(
+            RuntimeError("HTTP Error 403: Forbidden")
+        ),
+    )
+
+    with pytest.raises(SystemExit) as exc_info:
+        module.get_scholar_citations()
+
+    assert exc_info.value.code == 1
+    assert yaml.safe_load(output_file.read_text()) == existing
