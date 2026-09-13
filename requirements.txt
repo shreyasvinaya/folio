@@ -3,3 +3,5 @@ pyyaml
 scholarly
 # scholarly 1.7.x imports bibtexparser.bibdatabase, which was removed in bibtexparser 2.0.
 bibtexparser<2
+# scholarly 1.7.x passes proxies= to httpx.Client, which httpx 0.28 removed.
+httpx<0.28
