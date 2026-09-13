@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "publications",
-          description: "Publications, preprints, and workshop papers across chemistry, molecular ML, and scientific AI.",
+          description: "Publications, preprints, workshop papers, and patent applications across chemistry, molecular ML, and scientific AI.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/folio/publications/";
