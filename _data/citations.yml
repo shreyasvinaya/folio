@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-13'
+  last_updated: '2026-09-16'
 papers:
   cUJ8wngAAAAJ:3fE2CSJIrl8C:
     citations: 0
@@ -34,7 +34,7 @@ papers:
     title: DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning
     year: '2026'
   cUJ8wngAAAAJ:Y0pCki6q_DkC:
-    citations: 46
+    citations: 45
     title: 'ChemBERTa-3: an open source training framework for chemical foundation models'
     year: '2026'
   cUJ8wngAAAAJ:YsMSGLbcyi4C:
